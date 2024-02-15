@@ -1,0 +1,86 @@
+html{
+    scroll-behavior: smooth;
+}
+.payment{
+   
+    width:350px;
+    height: 460px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    right:0;
+    top: 0;
+    left: 0;
+    padding: 40px ;
+    margin-top: 80px;
+    margin-left: 350px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 11px 19px -3px rgba(0,0,0,0.82); 
+box-shadow: 9px 11px 19px -3px rgba(0,0,0,0.82);
+}
+.payTitle{
+    font-size: 20px;
+    color: lightgray;
+
+}
+label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.payInput::placeholder{
+    color: lightgray;
+}
+.cardIcons{
+    display: flex;
+    flex-direction: row;
+}
+.cardIcon{
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    width: 60px;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    border: none;
+    width: 100%;
+    left:0;
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+}
+.close{
+    height: 20px;
+    position: absolute;
+    top:10;
+    right:10;
+    background-color:grey;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+@media screen and (max-width:480px){
+    .payment{
+        width: 250px;
+        height: 490px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}

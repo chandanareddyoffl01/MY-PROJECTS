@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+.slider{
+    color:white;
+}
+.sliderWrapper{
+   display: flex;
+   width:500vh;
+   transition: all 1s ease-in-out;
+}
+.sliderItem{
+    position: relative;
+    width:100vw;
+    display: flex;
+    justify-content: right;
+}
+.sliderBg{
+    position: absolute;
+}
+.sliderTitle{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+}
+.buyButton{
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-top: 250px;
+    margin-right: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 1;
+    transition:  background-color 0.2s ease-in-out;
+    transition:  color 0.5s ease-in-out;
+}
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+.sliderImg{
+height:100vh;
+width:100vw;
+object-fit: cover;
+z-index: 1;
+}
+
+@media screen and (max-width:480px){
+    .slider{
+        clip-path: none;
+        margin: 0;
+    }
+    .sliderItem{
+        margin-left: 0;
+    }
+    .sliderImg{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderTitle{
+        top: 50px;
+       right: 20px;
+    font-size: 15px;
+    }
+    .buyButton{
+        bottom:0;
+        right:0;
+        top:unset;
+    }
+}
